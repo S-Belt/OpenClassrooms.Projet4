@@ -80,11 +80,11 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
+/*.texture-paper::before {
     background: url("img.2/texture-paper.png");
     background-size: 280px 280px;
     opacity: 0.6;
-}
+}*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -92,7 +92,7 @@ a:hover {
 
 .d-bloc {
     color: white;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .d-bloc button:hover {
@@ -271,7 +271,7 @@ footer a
 }
 
 #bloc-1-hero h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .navbar {
@@ -534,6 +534,7 @@ a[data-lightbox]:hover::before {
     font-weight: 100;
     z-index: 1;
     position: absolute;
+    align-self: center;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -624,7 +625,7 @@ a[data-lightbox]:hover img {
 
 h3,
 h6,
-p,
+
 label,
 .btn
 {
@@ -698,10 +699,10 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #333333;
 }
 
 .med-width-whitespace {
@@ -732,9 +733,9 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
+/*.white {
     color: #FFFFFF!important;
-}
+}*/
 
 .portfolio-thumb {
     margin-bottom: 24px;
@@ -750,7 +751,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: grey;
     padding: 40px 40px 40px 40px;
 }
 
@@ -770,6 +771,7 @@ h4 {
 
 .tc-white {
     color: white;
+    text-shadow: 0 1px 2px black;
 }
 
 .btn-atomic-tangerine {
@@ -802,10 +804,10 @@ h4 {
     color: #c27956!important;
 }
 
-.icon-dark-slate-blue {
+/*.icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
+}*/
 
 .bg-dots-bg {
     background-image: url("img.2/dots-bg.png");
@@ -824,48 +826,11 @@ h4 {
 }
 
 
-
-/* ===== MAJ ===== */
-
-#slogan
-{
-
-    justify-content: center;
-    align-content: center;
-}
-
-#slogan h2
-{
-    font-size: 3rem;
-    color: #575757;
-    margin-bottom: 5rem;
-}
-
-h5
-{
-    font-size: 2em;
-    color: white;
-    text-align: center;
-}
-
-footer p
-{
-    font-size: 1.2em;
-}
-
-footer ul
-{
-    padding-left: 0;
-}
-
-
-/* ===== MAJ END ===== */
-
 @media (max-width: 1024px) {
-    .bloc {
+/*    .bloc {
         padding-left: 20px;
         padding-right: 20px;
-    }
+    }*/
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
@@ -1001,10 +966,10 @@ footer ul
         float: left;
         margin-left: 10px;
     }
-    .bloc {
+/*    .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
+    }*/
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
@@ -1054,13 +1019,32 @@ footer ul
         width: 180px;
         height: 320px;
     }
-}
+    /* ===== Maj Responsive ===== */
 
-@media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
+    #bloc-1-hero h1 {
+    font-size: 2em;
     }
+
+    .hero-bloc-text {
+    font-size: 1.7em;
+    }
+
+    h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #333333;
+    }
+
+    h5
+    {
+        font-size: 1.3rem!important;
+        border-radius: 2rem!important;
+        padding: 1.5rem!important;
+
+
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -1068,3 +1052,82 @@ footer ul
         text-align: center;
     }
 }
+
+/* ===== MAJ ===== */
+
+#slogan
+{
+
+    justify-content: center;
+    align-content: center;
+}
+
+#slogan h2
+{
+    font-size: 3rem;
+    color: #575757;
+    margin-bottom: 5rem;
+}
+
+h5
+{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    text-shadow: 0 1px 2px white;
+    background-color: white;
+    opacity: 0.6;
+    width: 70%;
+    align-self: center;
+    margin: auto;
+    border-radius: 6rem;
+    padding: 2rem;
+
+}
+
+footer p
+{
+    font-size: 1.2em;
+}
+
+footer ul
+{
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer .d-bloc
+{
+    padding-left: 0;
+    color: black;
+}
+
+#contact2
+{
+    color: white;
+}
+
+.col-sm-6 img
+{
+    width: 100%;
+}
+
+#adresse img
+{
+    width: 50%;
+}
+
+.tc-black
+{
+    color: black;
+}
+
+.info p
+{
+    font-size: 1.3em;
+}
+
+
+
+/* ===== MAJ END ===== */
